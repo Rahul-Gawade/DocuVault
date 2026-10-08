@@ -1,0 +1,2 @@
+username=rahulgawade2006_db_user
+passward=9Xip5f1LJaoXKNe8
