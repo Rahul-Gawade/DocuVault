@@ -8,6 +8,7 @@ const documentSchema = new mongoose.Schema(
     publicId: String,
     fileType: String,
     fileSize: Number,
+    fileChecksum: String, // Cryptographic SHA-256 hash for document non-repudiation
     status: {
       type: String,
       enum: ['pending', 'partially_signed', 'completed'],

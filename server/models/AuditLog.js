@@ -5,6 +5,7 @@ const auditLogSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Document',
     required: true,
+    index: true,
   },
   recipientRef: {
     type: mongoose.Schema.Types.ObjectId,
@@ -13,6 +14,19 @@ const auditLogSchema = new mongoose.Schema({
   action: {
     type: String,
     required: true,
+    enum: ['created', 'invited', 'viewed', 'signed', 'removed'],
+  },
+  details: {
+    type: String,
+  },
+  ipAddress: {
+    type: String,
+  },
+  userAgent: {
+    type: String,
+  },
+  checksum: {
+    type: String, // Cryptographic hash for non-repudiation
   },
   timestamp: {
     type: Date,

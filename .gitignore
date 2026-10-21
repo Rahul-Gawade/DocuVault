@@ -4,3 +4,7 @@ node_modules
 uploads
 .DS_Store
 Thumbs.db
+.agents
+.claude
+AGENTS.md
+DESIGN.md

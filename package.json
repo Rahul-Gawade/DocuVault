@@ -1,0 +1,23 @@
+{
+  "name": "docuvault",
+  "version": "1.0.0",
+  "description": "Secure Document Sharing & E-Signature Simulator (MERN Full Stack)",
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "seed": "node server/seed.js",
+    "test:backend": "node server/test-api.js",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "e-signature",
+    "document-sharing",
+    "mern",
+    "react",
+    "express",
+    "mongodb",
+    "audit-trail"
+  ],
+  "author": "",
+  "license": "ISC"
+}
